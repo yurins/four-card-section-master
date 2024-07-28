@@ -1,0 +1,242 @@
+.card {
+  padding: 1.8rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1.5rem 1.5rem rgba(77, 79, 98, 0.2);
+}
+.card img {
+  float: right;
+  width: 3.563rem;
+  height: 3.563rem;
+}
+@media screen and (min-width: 80rem) {
+  .card img {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+.card__one {
+  border-top: 0.25rem solid #44D3D2;
+}
+
+.card__two {
+  border-top: 0.25rem solid #EA5454;
+}
+
+.card__three {
+  border-top: 0.25rem solid #FCAE4A;
+}
+
+.card__four {
+  border-top: 0.25rem solid #549EF2;
+}
+
+.card__wrapper {
+  color: #4D4F62;
+}
+
+.card__header h1 {
+  font-size: 1.5rem;
+  font-weight: 200;
+  line-height: 2rem;
+}
+@media screen and (min-width: 80rem) {
+  .card__header h1 {
+    font-size: 2.25rem;
+    letter-spacing: 0.016rem;
+    line-height: 3rem;
+  }
+}
+.card__header h1 span {
+  font-weight: 500;
+}
+.card__header p {
+  font-size: 0.938rem;
+  font-weight: 200;
+}
+
+.card h2 {
+  font-weight: 500;
+  font-size: 1.25rem;
+  text-align: left;
+}
+.card p {
+  font-weight: 200;
+  font-size: 0.813rem;
+  text-align: left;
+}
+@media screen and (min-width: 80rem) {
+  .card p {
+    line-height: 1.438rem;
+  }
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button,
+textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #FAFAFA;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+main {
+  text-align: center;
+  margin: 5.625rem 2rem 0 2rem;
+}
+@media screen and (min-width: 80rem) {
+  main {
+    margin: 5.625rem 10.313rem;
+  }
+}
+
+.card__header {
+  margin-bottom: 4.625rem;
+}
+@media screen and (min-width: 80rem) {
+  .card__header {
+    margin: 0 auto 4.625rem auto;
+    width: 50%;
+  }
+}
+.card__header h1 {
+  margin-bottom: 1rem;
+}
+
+.card__container {
+  display: grid;
+  gap: 2rem;
+}
+@media screen and (min-width: 80rem) {
+  .card__container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "start 1 end" "start 2 end";
+  }
+}
+
+.card h2 {
+  margin-bottom: 0.5rem;
+}
+@media screen and (min-width: 80rem) {
+  .card h2 {
+    margin-bottom: 1rem;
+  }
+}
+.card p {
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 80rem) {
+  .card p {
+    margin-bottom: 2.625rem;
+  }
+}
+
+@media screen and (min-width: 80rem) {
+  .card__one {
+    grid-area: start;
+    align-self: center;
+  }
+}
+
+@media screen and (min-width: 80rem) {
+  .card__two {
+    grid-area: 1;
+  }
+}
+
+@media screen and (min-width: 80rem) {
+  .card__three {
+    grid-area: 2;
+  }
+}
+
+@media screen and (min-width: 80rem) {
+  .card__four {
+    grid-area: end;
+    align-self: center;
+  }
+}/*# sourceMappingURL=style.css.map */

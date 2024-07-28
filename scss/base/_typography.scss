@@ -1,0 +1,43 @@
+//typography.scss
+@use '../utility/index' as utility;
+
+.card__wrapper {
+    color: utility.$gray;
+}
+
+.card__header {
+    h1 {
+        font-size: 1.5rem;
+        font-weight: 200;
+        line-height: 2rem;
+        @include utility.desktop {
+            font-size: 2.25rem;
+            letter-spacing: 0.016rem;
+            line-height: 3rem;
+        }
+        span {
+            font-weight: 500;
+        }
+    }
+    p {
+        font-size: 0.938rem;
+        font-weight: 200;
+    }
+}
+
+.card {
+    h2 {
+        font-weight:500;
+        font-size: 1.25rem;
+        text-align: left;
+    }
+
+    p {
+        font-weight: 200;
+        font-size: 0.813rem;
+        text-align: left;
+        @include utility.desktop {
+            line-height: 1.438rem;
+        }
+    }
+}

@@ -1,0 +1,81 @@
+@use '../utility/_index' as utility;
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main {
+    text-align: center;
+    margin: 5.625rem 2rem 0 2rem;
+    @include utility.desktop {
+        margin: 5.625rem 10.313rem;
+    }
+}
+
+
+.card__header {
+    margin-bottom: 4.625rem;
+    @include utility.desktop {
+        margin: 0 auto 4.625rem auto;
+        width: 50%;
+    }
+    h1 {
+        margin-bottom: 1rem;
+    }
+}
+
+.card__container {
+    display: grid;
+    gap: 2rem;
+    @include utility.desktop {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: "start 1 end" "start 2 end";
+    }
+}
+
+.card {
+    h2 {
+        margin-bottom: .5rem;
+        @include utility.desktop {
+            margin-bottom: 1rem;
+        }
+    }
+    p {
+        margin-bottom: 2rem;
+        @include utility.desktop {
+            margin-bottom: 2.625rem;
+        }
+    }
+}
+
+.card__one {
+    @include utility.desktop {
+        grid-area: start;
+        align-self: center;
+    }
+}
+
+.card__two {
+    @include utility.desktop {
+        grid-area: 1;
+    }
+}
+
+.card__three {
+    @include utility.desktop {
+        grid-area: 2;
+    }
+}
+
+.card__four {
+    @include utility.desktop {
+        grid-area: end;
+        align-self: center;
+    }
+}
+
+
+

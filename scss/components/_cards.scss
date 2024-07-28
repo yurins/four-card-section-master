@@ -1,0 +1,34 @@
+//cards.scss
+@use '../utility/index' as utility;
+
+.card {
+    padding: 1.8rem;
+    border-radius: .5rem;
+    box-shadow: 0 1.5rem 1.5rem rgba(77, 79, 98, .2);
+
+    img {
+        float: right;
+        width: 3.563rem;
+        height: 3.563rem;
+        @include utility.desktop {
+            width: 4rem;
+            height: 4rem;
+        }
+    }
+}
+
+.card__one {
+    border-top: .25rem solid utility.$green;
+}
+
+.card__two {
+    border-top: .25rem solid utility.$red;
+}
+
+.card__three {
+    border-top: .25rem solid utility.$yellow;
+}
+
+.card__four {
+    border-top: .25rem solid utility.$blue;    
+}
